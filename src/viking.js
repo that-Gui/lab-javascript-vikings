@@ -57,7 +57,11 @@ class War {
     this.saxonArmy.push(Saxon);
   }
   vikingAttack(){
-    
+    let pickedviking = saxonArmy[Math.floor(saxonArmy.length * Math.random())];
+    pickedviking.receiveDamage( Viking.strength );
+  }
+  saxonAttack(){
+
   }
 }
 
